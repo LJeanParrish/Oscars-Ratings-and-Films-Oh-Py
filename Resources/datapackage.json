@@ -1,0 +1,261 @@
+{
+  "datahub": {
+    "created": "2018-03-28T21:56:50.476336",
+    "findability": "published",
+    "flowid": "36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/5",
+    "hash": "4a838fa405c15d02936b125389003989",
+    "modified": "2018-03-29T06:15:34.958185",
+    "owner": "rufuspollock",
+    "ownerid": "36661def37f62e4130670ab75e06465a",
+    "stats": {
+      "bytes": 4208858,
+      "rowcount": 11058
+    }
+  },
+  "id": "36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners",
+  "name": "oscars-nominees-and-winners",
+  "readme": "Nominees and Winners of Academy Awards (the Oscars) from inception in 1927 through to the present.\n\nhttp://awardsdatabase.oscars.org/\n\nNotes\n\n* Awards ceremony happen in the following year from the actual awards so e.g. 2017 Oscars are awarded in March 2018.\n* 2017 was 90th academy awards\n\n",
+  "resources": [
+    {
+      "bytes": 583,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "validation_report.json",
+      "format": "json",
+      "hash": "222ce7551d9ad80ab4df85c892f6b53d",
+      "name": "validation_report",
+      "path": "https://pkgstore.datahub.io/36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/validation_report/data/222ce7551d9ad80ab4df85c892f6b53d/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 745019,
+      "datahub": {
+        "derivedFrom": [
+          "data"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/a269d213f6ac52125b7430b9c08b1591.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "a269d213f6ac52125b7430b9c08b1591",
+      "mediatype": "text/csv",
+      "name": "data_csv",
+      "path": "https://pkgstore.datahub.io/36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/data_csv/data/a269d213f6ac52125b7430b9c08b1591/data_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 11058,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "format": "default",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "winner",
+            "type": "boolean"
+          },
+          {
+            "format": "default",
+            "name": "entity",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1274517,
+      "datahub": {
+        "derivedFrom": [
+          "data"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/a269d213f6ac52125b7430b9c08b1591.csv",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "d3c23178ad964c76c8ce0ed81762ed7b",
+      "mediatype": "text/csv",
+      "name": "data_json",
+      "path": "https://pkgstore.datahub.io/36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/data_json/data/d3c23178ad964c76c8ce0ed81762ed7b/data_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 11058,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "format": "default",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "winner",
+            "type": "boolean"
+          },
+          {
+            "format": "default",
+            "name": "entity",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 495668,
+      "datahub": {
+        "type": "derived/zip"
+      },
+      "description": "Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.",
+      "dpp:streamedFrom": "/tmp/984.oscars-nominees-and-winners.zip",
+      "format": "zip",
+      "name": "oscars-nominees-and-winners_zip",
+      "path": "https://pkgstore.datahub.io/36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/oscars-nominees-and-winners_zip/data/d767f5aabef83ccad978a32a05f6becb/oscars-nominees-and-winners_zip.zip",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 959111,
+      "datahub": {
+        "derivedFrom": [
+          "data"
+        ],
+        "type": "derived/preview"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpymjtujn0/36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/data_csv/data/a269d213f6ac52125b7430b9c08b1591/data_csv.csv",
+      "encoding": "utf-8",
+      "forView": [
+        "datahub-preview-data_csv_preview"
+      ],
+      "format": "json",
+      "hash": "dd5172fb85e150266144589357206cbf",
+      "mediatype": "text/csv",
+      "name": "data_csv_preview",
+      "path": "https://pkgstore.datahub.io/36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/data_csv_preview/data/dd5172fb85e150266144589357206cbf/data_csv_preview.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 13058,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "format": "default",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "winner",
+            "type": "boolean"
+          },
+          {
+            "format": "default",
+            "name": "entity",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 733960,
+      "datahub": {
+        "type": "source/tabular"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/a269d213f6ac52125b7430b9c08b1591.csv",
+      "encoding": "UTF-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "data",
+      "path": "https://pkgstore.datahub.io/36661def37f62e4130670ab75e06465a/oscars-nominees-and-winners/data/archive/a269d213f6ac52125b7430b9c08b1591/data.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "format": "default",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "winner",
+            "type": "boolean"
+          },
+          {
+            "format": "default",
+            "name": "entity",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    }
+  ],
+  "title": "Academy Awards Oscars: Nominees and Winners 1927 to Present",
+  "views": [
+    {
+      "datahub": {
+        "type": "preview"
+      },
+      "name": "datahub-preview-data_csv_preview",
+      "resources": [
+        "data"
+      ],
+      "specType": "table",
+      "transform": {
+        "limit": 2000
+      }
+    }
+  ]
+}
