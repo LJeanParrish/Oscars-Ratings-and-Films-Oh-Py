@@ -23,7 +23,7 @@ Both datasets were downloaded and imported into Python for cleaning.
 
 ## Transformation
 
-# Summary of Streaming Data Cleanse
+### Summary of Streaming Data Cleanse
 
 * Drop empty columns
 * Remove rows that did not contain rating information
@@ -34,7 +34,7 @@ Both datasets were downloaded and imported into Python for cleaning.
 * Split Genres into eight separate columns
 * Validate column order for ease of use
 
-# Challenges
+### Challenges
 The greatest challenge of the Streaming Data was that several cells contained multiple data points separated by commas.  
 Some of these cells were not applicable for the team analysis, thus the decision was made to drop any additional data elements 
 post the primary and secondary listing.  The exception being the genres information which was split and added to eight new genre 
