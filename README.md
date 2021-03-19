@@ -28,17 +28,15 @@ Both datasets were downloaded and imported into Python for cleaning.
 * Drop empty columns
 * Remove rows that did not contain rating information
 * Split First and Second Director, drop any additional director information
-* Convert streaming services cells to Booleans, then merge with main data frame. Drop redundant columns and remain headers as appropriate
 * Split Location cell into Primary and Secondary Location, drop other locations
 * Split Language into Primary and Secondary Language, drop other languages
 * Split Genres into eight separate columns
-* Validate column order for ease of use
+* Convert streaming services cells to Booleans, 
 
 ### Challenges
-The greatest challenge of the Streaming Data was that several cells contained multiple data points separated by commas.  
-Some of these cells were not applicable for the team analysis, thus the decision was made to drop any additional data elements 
+The greatest challenge of the Streaming Data was that several cells contained multiple data points separated by commas. Some of these cells were not applicable for the team analysis, thus the decision was made to drop any additional data elements 
 post the primary and secondary listing.  The exception being the genres information which was split and added to eight new genre 
-columns.  Due to the size of the database, 15mil rows, this section of code took in excess of an hour to run. 
+columns.
 
 
 ## Load
