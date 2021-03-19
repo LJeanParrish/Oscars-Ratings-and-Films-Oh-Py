@@ -31,10 +31,10 @@ Both datasets were downloaded and imported into Python for cleaning.
 * Split Location cell into Primary and Secondary Location, drop other locations
 * Split Language into Primary and Secondary Language, drop other languages
 * Split Genres into eight separate columns
-* Convert streaming services cells to Booleans, 
+* Convert streaming services cells to Booleans
 
 ### Challenges
-The greatest challenge of the Streaming Data was that several cells contained multiple data points separated by commas. Some of these cells were not applicable for the team analysis, thus the decision was made to drop any additional data elements 
+The greatest challenge of the Streaming Data was that several cells contained multiple data points separated by commas. Some of these cells were not applicable for the team's analysis, thus the decision was made to drop any additional data elements 
 post the primary and secondary listing.  The exception being the genres information which was split and added to eight new genre 
 columns.
 
