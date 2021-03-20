@@ -1,3 +1,10 @@
+create database ohpydb
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8';
+ 
+--create tables under ohpydb schema
+
 create table award_categories(
 	category_id serial not null primary key,
 	category_name varchar(100) not null,
@@ -49,13 +56,7 @@ create table films(
 	constraint film_fk8 foreign key(seventh_genre) references genres_types(type_id)	,
 	constraint film_fk9 foreign key(eigth_genre) references genres_types(type_id)	 
 );
-
---create table streaming_services(
---	film_id int 
---);
  
---create table genres_match
-  
 create table academy_awards(
  year varchar(5) not null,
  category_id int not null,
