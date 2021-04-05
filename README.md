@@ -38,6 +38,28 @@ The greatest challenge of the Streaming Data was that several cells contained mu
 post the primary and secondary listing.  The exception being the genres information which was split and added to eight new genre 
 columns.
 
+### Summary of Awards Data Cleanse
+
+* Identify unique fields;
+* Combine data with similar music categories;
+* Combine data with similar short film categories;
+* Combine data with similarities for cinematography, art direction;
+* Identify winning actors;
+* Remove “year_ceremony” and “ceremony” columns
+* Identify winning best pictures.
+
+### Challenges
+The greatest challenge with the Awards dataset was that there were several columns containing similar categories.  This level of detail was not required 
+for the team’s assessment and therefore the data was merged.  As we progressed through the initial dataset, we found that it would be difficult to join to 
+the other dataset, so a new source file was used which listed film titles.
+
+### Data Joins
+The original data sources did not have a viable unique id to combine into a relation database.  A third data source from a CSV file was leveraged that 
+included film name as well as awards to remediate this issue.  
+
+Once the data was finalized, a ERD was constructed to establish how the data would be loaded into a relational database.  This analysis supported the construction of six tables.  
+Primary and Foreign keys were identified for data points category_id, nominee_id, film_id. 
+
 
 ## Load
 
